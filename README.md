@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/image-product-desktop.jpg)
+![](./images/preview-card-screenshot.png)
 
 ## Deployment project link
 
