@@ -12,7 +12,7 @@ main {
     justify-content: center;
 
     min-height: 100vh;
-    padding: 10px;
+    padding: 15px;
 }
 
 .wrapper {
@@ -28,10 +28,17 @@ main {
     width: 50%;
 }
 
+.mobile-picture {
+    display: none;
+}
+
 .wrapper__picture > img {
-    border-radius: 10px 0 0 10px;
     height: 100%;
     width: 100%;
+}
+
+.wrapper__picture.desktop-picture > img {
+    border-radius: 10px 0 0 10px;
 }
 
 .wrapper__description {
@@ -104,4 +111,30 @@ main {
 
 .wrapper__description-btn > svg {
     margin-right: .5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .wrapper__description {
+        width: 100%;
+    }
+
+    .wrapper__picture {
+        width: 100%;
+    }
+
+    .wrapper__picture.desktop-picture {
+        display: none;
+    }
+
+    .wrapper__picture.mobile-picture {
+        display: block;
+    }
+    
+    .mobile-picture img {
+        border-radius: 10px 10px 0 0;
+    }
 }
